@@ -1,0 +1,350 @@
+﻿<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <title></title>
+
+<script language="javaScript">
+  
+  function subMenuRollover(obj){
+    obj.style.color="white";
+    obj.style.backgroundColor="#B5B3C1";
+  }
+  
+  function subMenuRollout(obj){
+    obj.style.color="black";
+    obj.style.backgroundColor="#C9BCC8";
+  }
+  
+  function showUpSubMenu(targetDiv){
+    var srcElement=event.srcElement;
+    targetDiv.style.left=srcElement.offsetLeft;
+    targetDiv.style.top=srcElement.offsetTop+120;
+  }
+  
+  function hideSubMenu(targetDiv){
+    var srcElement=event.srcElement;
+    if(event.toElement != targetDiv && targetDiv.contains(event.toElement) == false){
+      targetDiv.style.left=-100000; 
+    }
+  }
+</script>
+
+   <style>
+
+#all {
+    margin: 0 auto;
+    width: 960px;
+    height: 320px;
+  }
+  #menu1 td {
+    text-align: center;
+    width: 192px;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px;
+
+  }
+  #all #네모 {width: 960px; height: 355px; overflow: hidden;
+    z-index: 15;}
+  #menu1 {
+    width: 960px;
+    background-color: #C9BCC8;
+    z-index: 20;
+  }
+
+  #동글뱅 {
+    width: 200px;
+    z-index: 25;
+    position: absolute;
+    top: 5px;
+    margin-left: 25%;
+  }
+aside table {
+    position: fixed;
+    left: 90%; top: 50%;
+    width: 90px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: #A8C9CD;
+    z-index: 10;
+  }
+footer {
+    text-align: center;
+  }
+  footer a {height: 20px; position: relative;}
+  #down span {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+     section {
+      margin: 0 auto;
+      width: 960px;
+   }
+ 
+   #imaged{
+      width:960px;
+      height:180px;
+      margin: 0 auto;
+   }
+   #image{
+          width: 960px;
+          height: 180px;
+          overflow: hidden;
+          margin: 0 auto;
+   }
+   #tap{
+    width: 200px;
+    overflow: hidden;
+   }
+   .B{
+      margin: 0 auto;
+      width: 400px;
+      display: inline;
+   }
+   #tap {
+      width: 940px;
+      margin: 0 auto;
+   }
+   .B {
+      float: left;
+      width:300px; height:35px;
+      background-color: #E4C1CB;
+      font-size: 16px;
+      border: 1px solid #C9BCC8;
+      text-align: center;
+      vertical-align: middle;
+      margin:5px 5px 1px 5px;
+      border-radius: 10px;
+   }
+   #now {background-color: #C9BCC8;}
+   .B a{text-decoration: none;
+        vertical-align: middle;}
+   .B a:link{color:black;}
+   .B a:visited{color:black;}
+   .address{
+    width:180px;
+    font-size:12px;
+    float: right;
+    margin-right: 200px;
+     }
+  #main{
+    margin:0 auto;
+    width:960px;
+  }
+  h4{margin-bottom:5px;}
+  
+  .tbimg{
+    height:200px;
+    width:140px;
+  }
+  .tbtxt{
+    height:200px;
+    width:320px;
+  }
+  .hot{
+    color:#af0805;
+    margin:0;
+  }
+   .cold{
+    color:#1252ba;
+    margin:0;
+    display: inline;
+  }
+  .info{
+    font-size:14px;
+  }
+
+  #menu1 a {text-decoration: none;}
+  #menu1 a:visited {color: white;}
+  #menu1 a:link {color: white;}
+
+  aside a {text-decoration: none;}
+  aside  a:visited {color: white;}
+  aside  a:link {color: white;}
+</style>
+</head>
+<body>
+   <section>
+
+
+  <div id="all">
+  <Img src=11111.png onmouseover=showUpSubMenu(menu1) onmouseout=hideSubMenu(menu1) id="네모"> 
+  <img src="동글.png" id="동글뱅">
+  <div id=menu1 style="position : absolute; left:-10000px;"  onmouseout=hideSubMenu(this)>
+    <table border=0>
+      <tr>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.new.html">NEW</a></td>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="introduce.html">INTRODUCE</a></td>
+        <td></td>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="news.html">NOTICE</a></td>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="sns.html">SNS</a></td>
+      </tr>
+      <tr>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.beverage.html">BEVERAGE</a></td>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="location.html">LOCATION</a></td>
+        <td></td>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="event.html">EVENT</a></td>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="franchise.html">FRANCHISE</a></td>
+      </tr>
+      <tr>
+        <td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.desert.html">DESSERT</a></td>
+      </tr>
+    </table>
+  </div>
+  </div>
+<aside>
+  <div id="fb">
+  <table>
+    <tbody>
+      <tr><td><a href="index.html">Home</a></td></tr>
+      <tr><td></td></tr>
+      <tr><td><a href="#동글뱅">△</a></td></tr>
+      <tr><td><a href="#down">▽</a></td></tr>
+      <tr><td><a href="location.html">Location</a></td></tr>
+      <tr><td><a href="https://www.instagram.com/lucir_cafe/">SNS</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+  </aside>
+   
+  <div id="imaged">
+    <img  id="image" src="menu.JPG">
+  </div>
+  <p class="address"> HOME > MENU > BEVERAGE</p>
+  <br><br><br>
+<div id="tap">
+    <div class="B">
+      <a href="menu.new.html">NEW</a>
+    </div>
+    <div class="B" id="now">
+      <a href="menu.beverage.html">BEVERAGE</a>
+    </div>
+    <div class="B">
+      <a href="menu.desert.html">DESSERT</a>
+    </div>
+</div>
+
+
+<div id="main">
+  <br><br><br>
+  <h2>&nbsp;COFFEE</h2>
+  <hr>
+  <br><br><br><br>
+  <table id="menutable">
+    <tr>
+      <td><img class="tbimg" src="아메리카노.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;아메리카노</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;3800</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;4200</p>
+        <P class="info">&nbsp;&nbsp;루씨르 에스프레소의 진한 풍미를 잘 느낄 수 <br>&nbsp;&nbsp;있는 커피입니다</P><br><br>
+      </td>
+      <td>&nbsp;<img class="tbimg" src="카페라떼.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;카페라뗴</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;3500</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;3900</p>
+        <P class="info">&nbsp;&nbsp;루씨르의 에스프레소와 부드러운 우유와 소량의 <br>&nbsp;&nbsp;우유 거품이 어우러진 음료</p><br><br>
+      </td>
+    </tr>
+   </table>
+   <br><br>
+   <table>
+    <tr>
+      <td><img class="tbimg" src="바닐라라떼.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;바닐라라떼</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;4000</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;4500</p>
+        <P class="info">&nbsp;&nbsp;따뜻한 우유에 루씨르 에스프레소와 바닐라 <br>&nbsp;&nbsp;시럽을 섞어 만든 음료입니다</P><br><br>
+      </td>
+      <td>&nbsp;<img class="tbimg" src="카라멜라떼.JPG"></td>
+      <td class="info">
+        <h4>&nbsp;&nbsp;카라멜라떼</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;4000</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;4500</p>
+        <P class="info">&nbsp;&nbsp;부드럽고 진한 카라멜과 풍미 가득 에스프레소와 <br>&nbsp;&nbsp;신선한 우유</P><br><br>
+      </td>
+    </tr>
+  </table>
+  <br><br>
+   <table>
+    <tr>
+      <td><img class="tbimg" src="카푸치노.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;카푸치노</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;3800</p>
+        <P class="info">&nbsp;&nbsp;거품이 퐁퐁~ 향긋한 에스프레소와 신선한 우유<br>&nbsp;&nbsp;카푸치노는 따뜻한 음료만 가능합니다.</P><br><br>
+      </td>
+      <td>&nbsp;<img class="tbimg" src="연유라떼.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;연유라떼</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;4000</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;4500</p>
+        <P class="info">&nbsp;&nbsp;루씨르 에스프레소와 우유 그리고 부드러운 연유<br>&nbsp;&nbsp;를함께하여 거품까지 부드러운 달콤한 음료</p><br><br>
+      </td>
+    </tr>
+  </table>
+
+  <br><br><br>
+  <h2>&nbsp;BEVERAGE</h2>
+  <hr>
+  <br><br><br><br>
+  <table id="menutable">
+    <tr>
+      <td><img class="tbimg" src="초콜릿라떼.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;초콜릿라떼</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;4000</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;4500</p>
+        <P class="info">&nbsp;&nbsp;부드러운 우유와 진한 초콜릿이 휘핑크림과 함께 <br>&nbsp;&nbsp;어우러진 라떼</P><br><br>
+      </td>
+      <td>&nbsp;<img class="tbimg" src="말차라떼.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;말차라뗴</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;4500</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;5000</p>
+        <P class="info">&nbsp;&nbsp;부드러운 우유와 달콤 쌉싸름한 녹차가 어우러진 <br>&nbsp;&nbsp;라떼</p><br><br>
+      </td>
+    </tr>
+   </table>
+   <br><br>
+   <table>
+    <tr>
+      <td><img class="tbimg" src="얼그레이홍차.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;얼그레이 홍차</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;3500</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;4000</p>
+        <P class="info">&nbsp;&nbsp;지중해의 감귤류 과일인 베르가못의 오일이 만들<br>&nbsp;&nbsp;어낸 특별한 홍차</P><br><br>
+      </td>
+      <td>&nbsp;<img class="tbimg" src="페퍼민트.JPG"></td>
+      <td class="info">
+        <h4>&nbsp;&nbsp;페퍼민트 티</h4><p class="hot">&nbsp;&nbsp;HOT&nbsp;&nbsp;3500</p><p class="cold">&nbsp;&nbsp;COLD&nbsp;4000</p>
+        <P class="info">&nbsp;&nbsp;스태미나를 높이고 스트레스를 낮춰주며 면역성을 <br>&nbsp;&nbsp;향상시켜주는 차</P><br><br>
+      </td>
+    </tr>
+  </table>
+  <br><br>
+   <table>
+    <tr>
+      <td><img class="tbimg" src="아이스티.JPG"></td>
+      <td class="tbtxt">
+        <h4>&nbsp;&nbsp;아이스티</h4><p class="cold">&nbsp;&nbsp;COLD&nbsp;&nbsp;4000</p>
+        <P class="info">&nbsp;&nbsp;달달구리 시원한 아이스티</P><br><br>
+      </td>
+      <td></td>
+      <td class="tbtxt">
+        
+      </td>
+    </tr>
+  </table>
+  <br><br><br><br>
+  
+</div>
+
+</section>
+<footer id="down" style="background-color: #B5B3C1; height: 200px; position: relative;">
+  <hr>
+  <h1 style="font-family: serif; font-weight: bold;">LUCIR</h1>
+  <span>
+  경남 진주시 가좌길 22 2층(경남 진주시 가좌동 1445-6 2층) | TEL:055-756-3322
+  <br>
+  2017011357 김하윤 | 2017011381 여희림 | 2017011387 이수현
+  <a href="https://www.instagram.com/lucir_cafe/"><img src="인스타.png" width="20px" style="position: relative; top:50%; "></a>
+  <br>
+  ⓒ2018 인기응 팀 프로젝트 A+ 참 10조
+  </span>
+  </footer>
+
+
+
+
+</body>
+</html>

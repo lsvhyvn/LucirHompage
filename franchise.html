@@ -1,0 +1,258 @@
+﻿<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+   <title>LUCIR_FRANCHISE</title>
+   <SCRIPT language="javaScript">
+   
+   function subMenuRollover(obj){
+      obj.style.color="white";
+      obj.style.backgroundColor="#B5B3C1";
+   }
+   
+   function subMenuRollout(obj){
+      obj.style.color="black";
+      obj.style.backgroundColor="#C9BCC8";
+   }
+   
+   function showUpSubMenu(targetDiv){
+      var srcElement=event.srcElement;
+      targetDiv.style.left=srcElement.offsetLeft;
+      targetDiv.style.top=srcElement.offsetTop+120;
+   }
+   
+   function hideSubMenu(targetDiv){
+      var srcElement=event.srcElement;
+      if(event.toElement != targetDiv && targetDiv.contains(event.toElement) == false){
+         targetDiv.style.left=-100000; 
+      }
+   }
+</SCRIPT>
+   <style>
+
+#all {
+      margin: 0 auto;
+      width: 960px;
+      height: 320px;
+   }
+   #menu1 td {
+      text-align: center;
+      width: 192px;
+      margin: 0;
+      height: 40px;
+      line-height: 40px;
+      padding: 5px;
+
+   }
+   #all #네모 {width: 960px; height: 355px; overflow: hidden;
+      z-index: 15;}
+   #menu1 {
+      width: 960px;
+      background-color: #C9BCC8;
+      z-index: 20;
+   }
+
+   #동글뱅 {
+      width: 200px;
+      z-index: 25;
+      position: absolute;
+      top: 5px;
+      margin-left: 25%;
+   }
+
+   aside table {
+      position: fixed;
+      left: 90%; top: 50%;
+      width: 90px;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      background-color: #A8C9CD;
+      z-index: 10;
+   }
+
+   section {
+      margin: 0 auto;
+      width: 960px;
+   }
+      div.container {
+        overflow: hidden;
+      }
+
+      div.item{background-color: #E4C1CB; 
+        float: left;
+        margin: 0 3px;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+     
+      }
+
+      footer {
+      text-align: center;
+   }
+   footer a {height: 20px; position: relative;}
+   #down span {
+      padding: 10px;
+      font-size: 12px;
+   }
+
+   a {text-decoration:none;} 
+   a:visited {color: white;}
+   a:link {color:  white;}
+
+         
+      #map {width:860px;
+	       	; float: left
+	       	}
+	  #map2 {width: 50px; height:30px;}
+      
+	  #map3 {width: 50px; height:30px;}
+	  
+   #size {width: 20px}
+   #adress {font-size: 12px; float: right;}
+   #tap {
+      width: 940px;
+      margin: 0 auto;
+   }
+      .B {
+      float: left;
+      width:300px; height:35px;
+      background-color: #E4C1CB;
+      font-size: 16px;
+      border: 1px solid #E4C1CB;
+      text-align: center;
+      vertical-align: middle;
+      margin:5px 5px 1px 5px;
+      border-radius: 10px;
+   }
+   #now {background-color: #C9BCC8;}
+   .B a{text-decoration: none;
+        vertical-align: middle;}
+   .B a:link{color:black;}
+   .B a:visited{color:black;}
+   #소계 {color: red; font-weight: bold;}
+   #th{background-color: #EFEDED;}
+   .table{margin: 0 auto; width: 860px;}
+   #f{margin: 0 auto; width: 960px;}
+</style>
+</head>
+<body>
+   <section>
+   
+<div id="all">
+   <Img src=11111.png onmouseover=showUpSubMenu(menu1) onmouseout=hideSubMenu(menu1) id="네모"> 
+   <img src="동글.png" id="동글뱅">
+   <DIV ID=menu1 style="position : absolute; left:-10000px;"  onmouseout=hideSubMenu(this)>
+      <TABLE border=0>
+         <TR>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.new.html">NEW</a></TD>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="introduce.html">INTRODUCE</a></TD>
+            <td></td>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="news.html">NOTICE</a></TD>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="sns.html">SNS</a></TD>
+         </TR>
+         <TR>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.beverage.html">BEVERAGE</a></TD>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="location.html">LOCATION</a></TD>
+            <td></td>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="event.html">EVENT</a></TD>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="franchise.html">FRANCHISE</a></TD>
+         </TR>
+         <TR>
+            <TD onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.desert.html">DESSERT</a></TD>
+         </TR>
+      </TABLE>
+   </DIV>
+   </div>
+
+   <aside>
+   <div id="fb">
+   <table>
+      <tbody>
+         <tr><td><a href="index.html">Home</a></td></tr>
+         <tr><td></td></tr>
+         <tr><td><a href="#동글뱅">△</a></td></tr>
+         <tr><td><a href="#down">▽</a></td></tr>
+         <tr><td><a href="location.html">Location</a></td></tr>
+         <tr><td><a href="https://www.instagram.com/lucir_cafe/">SNS</a></td></tr>
+      </tbody>
+   </table>
+   </div>
+   </aside>
+		  <div id = "f" >
+	  <img src="프랜차이즈 배경.png" width="960px;" height="400px;" ></div>
+	<br>
+	<br>
+	<br>
+	   <div class = "container" >
+	    <div id="tap">
+    <div class="B">
+      <a href="sns.html">SNS</a>
+    </div>
+    <div class="B" id="now">
+      <a href="franchise.html">FRANCHISE</a>
+    </div>
+	  </div>
+	  	  <br>
+<p id = "adress"> HOME > COMMUNITY > FRANCHISE </p>
+	  <br><br>
+	  <hr><br>
+	  <br>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15평기준
+	  <br><br>
+	  <div class = "table">
+	  <table border="1">
+	  	<tr id = "th">
+	 
+	  			<td>항목</td>
+	  		<td>내용</td>
+	  		<td>비용</td>
+	  	</tr>
+	  	<tr><td>가맹비</td>
+	  		<td>&nbsp;&nbsp;영업 표시의 사용 및 영업관리</td>
+	  		<td>500</td></tr>
+	  	<tr><td>인테리어</td>
+	  		<td>&nbsp;&nbsp;기본 공사: 내부 바닥,천장,주방(설비),벽체 공사,목공사,전기,조명,도장,타일,설비,상하부장</td>
+	  		<td>1500</td></tr>
+	  	<tr><td>가구류</td>
+	  		<td>&nbsp;&nbsp;서비스 테이블/2인 의탁자 10조</td><td>500</td></tr>
+	  	<tr><td>간판</td>
+	  		<td>&nbsp;&nbsp;전면 4M*1M 메인간판 1개, 원형 엠블렘 (간판 프레임 포함)내외부 사인,<br>&nbsp;&nbsp;메뉴판 설치,스텐실,기타 실사 출력물</td><td>700</td></tr>
+	  	<tr><td>장비류</td> 
+	  		<td>&nbsp;&nbsp;반자동 커피머신,자동 그라인더,제빙기(100kg),핫디스펜서,테이블 냉장고 2대,블렌더 2대,<br>&nbsp;&nbsp;45BOX 냉동고 2대</td><td>2000</td></tr>
+	  	<tr><td>주방기물 및 집기류</td>
+	  		<td>&nbsp;&nbsp;푸드 및 음료 제조 및 집기류</td><td>200</td>
+	  	</tr>
+	  	<tr><td>소계</td><td></td><td id = "소계">5400</td></tr>
+	  </table></div>
+	  <h5>※ 별도 공사: 추가간판(돌출간판),어닝,철거,파사드 공사 (외부금속,유리,테이크 아웃부스,자동문),전기 증설(12KW),냉 난방기,설비 코어작업,
+      <br>&nbsp;&nbsp;&nbsp; 방수, 소방,가설,테라스,화장실 등
+   <br>※ 장비 및 일부 집기의 경우 지역에 따라 배송비, 설치비 추가 발생(서울, 경기 외)
+   <br>※ 야간 할증 : 인테리어 비용에 60% 할증 / 지방 할증 : 인테리어 비용에 20% 할증, 제주 지역에 한해 50% 할증
+   <br>&nbsp;&nbsp;&nbsp;(지방 할증 제외 지역 : 서울,경기,부산,경남)
+   <br>※ 오픈 프로모션 별도 협의
+   <br>※ 반제전환 버티컬 믹서기 추가 구입비 별도 / 홍보용 모니터 설치 별도
+   <br>※ 상기 투자비 내역은 매장 형태 및 매장 상황에 따라 (특수상권 포함) 달라질 수 있습니다</h5>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</section>
+
+<footer id="down" style="background-color: #B5B3C1; height: 200px; position: relative;">
+   <hr>
+   <h1 style="font-family: serif; font-weight: bold;">LUCIR</h1>
+   <span>
+   경남 진주시 가좌길 22 2층(경남 진주시 가좌동 1445-6 2층) | TEL:055-756-3322
+   <br>
+   2017011357 김하윤 | 2017011381 여희림 | 2017011387 이수현
+   <a href="https://www.instagram.com/lucir_cafe/"><img src="인스타.png" width="20px" style="position: relative; top:50%; "></a>
+   <br>
+   ⓒ2018 인기응 팀 프로젝트 A+ 참 10조
+   </span>
+   </footer>
+
+</body>
+</html>

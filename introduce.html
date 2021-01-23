@@ -1,0 +1,262 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LUCIR_INTRODUCE</title>
+
+	<script language="javaScript">
+	
+	function subMenuRollover(obj){
+		obj.style.color="white";
+		obj.style.backgroundColor="#B5B3C1";
+	}
+	
+	function subMenuRollout(obj){
+		obj.style.color="black";
+		obj.style.backgroundColor="#C9BCC8";
+	}
+	
+	function showUpSubMenu(targetDiv){
+		var srcElement=event.srcElement;
+		targetDiv.style.left=srcElement.offsetLeft;
+		targetDiv.style.top=srcElement.offsetTop+120;
+	}
+	
+	function hideSubMenu(targetDiv){
+		var srcElement=event.srcElement;
+		if(event.toElement != targetDiv && targetDiv.contains(event.toElement) == false){
+			targetDiv.style.left=-100000;	
+		}
+	}
+	</script>
+
+	   <style>
+
+	#all {
+		margin: 0 auto;
+		width: 960px;
+		height: 320px;
+	}
+	#menu1 td {
+		text-align: center;
+		width: 192px;
+		margin: 0;
+		height: 40px;
+		line-height: 40px;
+		padding: 5px;
+
+	}
+	#all #네모 {width: 960px; height: 355px; overflow: hidden;
+		z-index: 15;}
+	#menu1 {
+		width: 960px;
+		background-color: #C9BCC8;
+		z-index: 20;
+	}
+
+	#동글뱅 {
+		width: 200px;
+		z-index: 25;
+		position: absolute;
+		top: 5px;
+		margin-left: 25%;
+	}
+
+	aside table {
+		position: fixed;
+		left: 90%; top: 50%;
+		width: 90px;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+		background-color: #A8C9CD;
+		z-index: 10;
+	}
+	footer {
+		text-align: center;
+	}
+	footer a {height: 20px; position: relative;}
+	#down span {
+		padding: 10px;
+		font-size: 12px;
+	}
+
+	a {text-decoration:none;} 
+	a:visited {color: white;}
+	a:link {color:  white;}
+
+	   section { 
+	      margin: 0 auto;
+	      width: 960px;
+	   }
+	   
+	      div.container {
+        overflow: hidden;
+      }
+
+      div.item{background-color: #E4C1CB; 
+        float: left;
+        margin: 0 3px;
+        padding: 10px;
+        border-radius: 10px 10px 10px 10px;
+     
+      }
+       .item a : link {color: white}
+      .item a:visited {color: white}
+
+    
+	       #소개사진 {width: 480px;
+	       	height: 300px; float: left}
+	       	#소개글 { text-align: center; } 
+	       	#소개사진2 {width: 480px;
+	       	height: 300px; float: right}
+	       	#소개글2 { text-align: center}
+	       	footer {
+      text-align: center;
+      background-color: ;
+   }
+  
+   #size {width: 20px}
+   #adress {font-size: 12px; float: right;}
+   #소개배경{width: 960px;}
+   #tap {
+      width: 940px;
+      margin: 0 auto;
+   }
+   .B {
+      float: left;
+      width:300px; height:35px;
+      background-color: #E4C1CB;
+      font-size: 16px;
+      border: 1px solid #E4C1CB;
+      text-align: center;
+      vertical-align: middle;
+      margin:5px 5px 1px 5px;
+      border-radius: 10px;
+   }
+   #now {background-color: #C9BCC8;}
+   .B a{text-decoration: none;
+        vertical-align: middle;}
+   .B a:link{color:black;}
+   .B a:visited{color:black;}
+	</style>
+	</head>
+	<body>
+	   <section>
+	   
+<div id="all">
+	<Img src=11111.png onmouseover=showUpSubMenu(menu1) onmouseout=hideSubMenu(menu1) id="네모"> 
+	<img src="동글.png" id="동글뱅">
+	<div id=menu1 style="position : absolute; left:-10000px;"  onmouseout=hideSubMenu(this)>
+		<table border=0>
+			<tr>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.new.html">NEW</a></td>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="introduce.html">INTRODUCE</a></td>
+				<td></td>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="news.html">NOTICE</a></td>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="sns.html">SNS</a></td>
+			</tr>
+			<tr>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.beverage.html">BEVERAGE</a></td>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="location.html">LOCATION</a></td>
+				<td></td>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="event.html">EVENT</a></td>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="franchise.html">FRANCHISE</a></td>
+			</tr>
+			<tr>
+				<td onmouseover=subMenuRollover(this) onmouseout=subMenuRollout(this)><a href="menu.desert.html">DESSERT</a></td>
+			</tr>
+		</table>
+	</div>
+	</div>
+
+	<aside>
+	<div id="fb">
+	<table>
+		<tbody>
+			<tr><td><a href="index.html">Home</a></td></tr>
+			<tr><td></td></tr>
+			<tr><td><a href="#동글뱅">△</a></td></tr>
+			<tr><td><a href="#down">▽</a></td></tr>
+			<tr><td><a href="location.html">Location</a></td></tr>
+			<tr><td><a href="https://www.instagram.com/lucir_cafe/">SNS</a></td></tr>
+		</tbody>
+	</table>
+	</div>
+	</aside>
+
+	<div = "소개배경">
+	<img src="소개 배경.png" id ="소개배경"></div>
+<div id="tap">
+    <div class="B" id="now">
+      <a href="introduce.html">INTODUCE</a>
+    </div>
+    <div class="B">
+      <a href="location.html">LOCATION</a>
+    </div>
+</div>
+	  <br>
+	  <p id = "adress"> HOME > BRANDSTORY > INTRODUCE </p>
+	  <br><br>
+	  <hr>
+		<p>
+		<h1 align="center">'LUCIR'는 빛나다, 반짝이다라는 뜻의 스페인어입니다.</h1></p>
+		<br>
+		<img src= "제목 없음7.png" float= "left" id = "소개사진">
+		<div id ="소개글" >
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3>01. 커피 그 이상의 가치</h3>
+		<h4> 부드러운 커피 한 잔과 함께 즐기는 다양한 디저트, 좋은 사람들과 함께 감동을 전합니다.
+ 			 </h4></div>	
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<img src= "제목 없음4.png" float= "right" id = "소개사진2">
+		<div id ="소개글2" >
+		<br>
+		<br>
+		<br>
+		<br>
+		<h3>02. 마음을 전하는 디저트</h3>
+		<h4> 
+		단순히 디저트를 맛보는 카페에 그치지 않고 LUCIR를 찾는 모든 이들이 최고의 디저트를 맛봄으로써 고객들의 가치가 빛날 수 있도록 소중한 마음을 전합니다.</h4>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<img src= "제목 없음5.png" float= "left" id = 소개사진>
+		<div id ="소개글" >
+        <br>
+		<br>
+		<br>
+		<br>
+		<h3>03. 감각적인 인테리어</h3>
+		<h4> 
+		최고의 디저트와 함께 현대적인 감각으로 재조명한 인테리어로 포근한 공간을 선사합니다.</h4></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>	
+	</p>
+	</section>
+	<footer id="down" style="background-color: #B5B3C1; height: 200px; position: relative;">
+	<hr>
+	<h1 style="font-family: serif; font-weight: bold;">LUCIR</h1>
+	<span>
+	경남 진주시 가좌길 22 2층(경남 진주시 가좌동 1445-6 2층) | TEL:055-756-3322
+	<br>
+	2017011357 김하윤 | 2017011381 여희림 | 2017011387 이수현
+	<a href="https://www.instagram.com/lucir_cafe/"><img src="인스타.png" width="20px" style="position: relative; top:50%; "></a>
+	<br>
+	ⓒ2018 인기응 팀 프로젝트 A+ 참 10조
+	</span>
+	</footer>
+	</body>
+	</html>
